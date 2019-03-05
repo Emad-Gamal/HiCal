@@ -1,0 +1,15 @@
+{
+  "name": "hical",
+  "version": "1.0.0",
+  "description": "",
+  "main": "HiCal.js",
+  "scripts": {
+    "start": "node HiCal.js",
+    "test": "mocha HiCalTest.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^6.0.2"
+  }
+}
