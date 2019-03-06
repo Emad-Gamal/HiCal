@@ -1,12 +1,17 @@
 let sortTimeSlots = (timeSlots) =>{
+    var swaped;
     for(i=0;i<timeSlots.length;i++){
+        swaped = false;
         for(j=1;j<timeSlots.length;j++){
             if(timeSlots[j].startTime < timeSlots[j-1].startTime ){
                 temp = timeSlots[j];
                 timeSlots[j] = timeSlots[j-1];
                 timeSlots[j-1] = temp;
+                swaped = true;
             }
         }
+        if(!swaped)
+            break;
     }
 
     return timeSlots;
